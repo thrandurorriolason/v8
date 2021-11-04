@@ -45,7 +45,7 @@ const game = () => {
 	let playerScore = 0;
 	let computerScore = 0;
 	let moves = 0;
-	let mymoves = 5;
+	let mymoves = 3;
 
 
 	const playGame = () => {

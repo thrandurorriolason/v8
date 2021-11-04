@@ -45,7 +45,7 @@
 	margin-top: 2rem;
 }
 
-.rock, .paper, .scissor, .byrja{
+.rock, .paper, .scissor, .byrja, .bo1, .bo3, .bo5, .bo7, .bo9{
 	padding: 0.8rem;
 	width: 100px;
 	border-radius: 10px;
@@ -96,5 +96,10 @@
 
 .start{
     display: flex;
+    justify-content: center;
+}
+
+.round{
+	display: none;
     justify-content: center;
 }

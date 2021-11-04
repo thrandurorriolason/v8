@@ -10,6 +10,33 @@ function hide()
 	 {  
 		 div.style.display = "none";  
 	 }  
+	 var byrja = document.querySelector(".bo1");
+	 byrja.style.display = "none";
+
+	 var byrja = document.querySelector(".bo3");
+	 byrja.style.display = "none";
+
+	 var byrja = document.querySelector(".bo5");
+	 byrja.style.display = "none";
+
+	 var byrja = document.querySelector(".bo7");
+	 byrja.style.display = "none";
+
+	 var byrja = document.querySelector(".bo9");
+	 byrja.style.display = "none";
+}  
+
+function hide2()
+{  
+	 var div = document.getElementById("round");  
+	 if (div.style.display !== "flex") 
+	 {  
+		 div.style.display = "flex";  
+	 }  
+	 else
+	 {  
+		 div.style.display = "none";  
+	 }  
 	 var byrja = document.querySelector(".byrja");
 	 byrja.style.display = "none";
 }  
@@ -18,6 +45,7 @@ const game = () => {
 	let playerScore = 0;
 	let computerScore = 0;
 	let moves = 0;
+	let mymoves = 5;
 
 
 	const playGame = () => {
@@ -32,7 +60,7 @@ const game = () => {
 
 				const movesLeft = document.querySelector('.movesleft');
 				moves++;
-				movesLeft.innerText = `Moves Left: ${10-moves}`;
+				movesLeft.innerText = `Moves Left: ${mymoves-moves}`;
 				
 
 				const choiceNumber = Math.floor(Math.random()*3);
@@ -40,7 +68,7 @@ const game = () => {
 
 				winner(this.innerText,computerChoice)
 
-				if(moves == 10){
+				if(moves == mymoves){
 					gameOver(playerOptions,movesLeft);
 				}
 			})
